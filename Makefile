@@ -94,7 +94,7 @@ IMPLS = ada ada.2 awk bash basic bbc-basic c chuck clojure coffee common-lisp cp
 	guile haskell haxe hy io java js jq julia kotlin livescript logo lua make mal \
 	matlab miniMAL nasm nim objc objpascal ocaml perl perl6 php picolisp pike plpgsql \
 	plsql powershell ps python python.2 r racket rexx rpython ruby rust scala scheme skew \
-	swift swift3 swift4 swift5 tcl ts vala vb vhdl vimscript wasm wren yorick zig
+	swift swift3 swift4 swift5 tcl ts vala vb vhdl vimscript wasm wren yorick zig quux
 
 EXTENSION = .mal
 
@@ -111,7 +111,6 @@ step9 = step9_try
 stepA = stepA_mal
 
 argv_STEP = step6_file
-
 
 regress_step0 = step0
 regress_step1 = step1
@@ -162,6 +161,8 @@ endif
 #
 # Implementation specific utility functions
 #
+#
+quux_STEP_TO_PROG = impls/quux/$($(1)).rb
 
 basic_STEP_TO_PROG_cbm          = impls/basic/$($(1)).bas
 basic_STEP_TO_PROG_qbasic       = impls/basic/$($(1))
